@@ -18,7 +18,7 @@ export default function Dashboard() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/dashboard")
+    fetch("https://backend-venta.vercel.app/api/dashboard")
       .then((r) => r.json())
       .then((d) => {
         setStats(d.stats || d);

@@ -12,7 +12,7 @@ export default function Usuarios() {
   // 🔹 Obtener lista de usuarios
   const fetchUsuarios = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/users");
+      const res = await fetch("https://backend-venta.vercel.app/api/users");
       if (!res.ok) throw new Error("Error al obtener usuarios");
       const data = await res.json();
       setUsuarios(data);
